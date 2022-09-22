@@ -34,11 +34,13 @@ class RecyclerAdapter: RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
 
     @SuppressLint("InflateParams")
     inner class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
+
         var itemImage: ImageView
         var itemTitle: TextView
         var itemDetail: TextView
 
         init {
+
             itemImage = itemView.findViewById(R.id.list_image)
             itemTitle = itemView.findViewById(R.id.list_title)
             itemDetail = itemView.findViewById(R.id.list_detail)
